@@ -21,10 +21,35 @@ behaviour_map_2 = [
     "q3 y y d q3",
     "q3 b b d q4",
 ]
+behaviour_map_e1 = [
+    "q0 b 0 d q1",
+    "q1 b 1 d q0",
+]
+behaviour_map_e2 = [
+    "q0 b 1 d q1",
+    "q0 t 1 d q0",
+    "q0 0 0 d q0",
+    "q0 1 1 d q0",
+    "q1 t 1 d q1",
+    "q1 0 0 d q1",
+    "q1 1 1 d q1",
+    "q1 b 0 d q2",
+    "q2 b b i q2",
+    "q2 1 1 i q2",
+    "q2 0 0 i q3",
+    "q3 t t i q3",
+    "q3 1 t d q4",
+    "q4 t t d q4",
+    "q4 0 0 d q4",
+    "q4 1 1 d q4",
+    "q4 b 1 d q2",
+    "q3 b b d q0",
+    "q3 0 0 d q0",
+]
 
 initial_state = 'q0'
-program = program_2_2
-behaviour_map = behaviour_map_2
+program = 'bbbb'
+behaviour_map = behaviour_map_e2
 
 def print_tape(tape, state, pos):
     l = min(tape.keys())
